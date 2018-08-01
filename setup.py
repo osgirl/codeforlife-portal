@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 import versioneer
 setup(name='codeforlife-portal',
       cmdclass=versioneer.get_cmdclass(),
-      version=versioneer.get_version(),
+      version='1.0.post0.dev768',
       packages=find_packages(),
       include_package_data=True,
       install_requires=[
@@ -17,9 +17,9 @@ setup(name='codeforlife-portal',
           'django-recaptcha==1.3.1',  # 1.4 dropped support for < 1.11
 
           'pyyaml==3.10',
-          'rapid-router==1.0.0.post0.dev414',
+          'rapid-router==1.0.0.post0.dev425',
           'six==1.11.0',
-          'aimmo==0.1.1a0.post0.dev80',
+          'aimmo==0.1.1a0.post0.dev98',
           'docutils==0.12',
           'reportlab==3.2.0',
           'postcodes==0.1',
@@ -41,8 +41,8 @@ setup(name='codeforlife-portal',
           'django-forms-bootstrap'
       ],
       dependency_links=[
-          'git+https://github.com/ocadotechnology/aimmo.git@django_110#egg=aimmo-0.1.1a0.post0.dev80',
-          'git+https://github.com/ocadotechnology/rapid-router.git@upgrade_django#egg=rapid-router-1.0.0.post0.dev414'
+          'git+https://github.com/ocadotechnology/aimmo.git@django_110#egg=aimmo-0.1.1a0.post0.dev98',
+          'git+https://github.com/ocadotechnology/rapid-router.git@upgrade_django#egg=rapid-router-1.0.0.post0.dev425'
 
       ],
       tests_require=[
