@@ -19,7 +19,7 @@ setup(name='codeforlife-portal',
           'pyyaml==3.10',
           'rapid-router==1.0.0.post0.dev425',
           'six==1.11.0',
-          'aimmo==0.1.1a0.post0.dev98',
+          'aimmo',
           'docutils==0.12',
           'reportlab==3.2.0',
           'postcodes==0.1',
@@ -41,7 +41,6 @@ setup(name='codeforlife-portal',
           'django-forms-bootstrap'
       ],
       dependency_links=[
-          'git+https://github.com/ocadotechnology/aimmo.git@django_110#egg=aimmo-0.1.1a0.post0.dev98',
           'git+https://github.com/ocadotechnology/rapid-router.git@upgrade_django#egg=rapid-router-1.0.0.post0.dev425'
 
       ],
