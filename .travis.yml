@@ -39,7 +39,6 @@ matrix:
 install:
   - pip install -U pip
   - pip install -U setuptools
-  - pip list | grep setuptools
   - pip install -e .
   - pip install coveralls
 before_script:
