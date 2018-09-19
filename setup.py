@@ -3,11 +3,11 @@ from setuptools import find_packages, setup
 import versioneer
 setup(name='codeforlife-portal',
       cmdclass=versioneer.get_cmdclass(),
-      version=versioneer.get_version(),
+      version='0.2.0',
       packages=find_packages(),
       include_package_data=True,
       install_requires=[
-          'django==1.9.13',
+          'django>=1.9.3, <=1.10.8',
           'django-appconf==1.0.1',
           'django-countries==3.4.1',
           'djangorestframework==3.2.3',
@@ -17,7 +17,7 @@ setup(name='codeforlife-portal',
           'django-recaptcha==1.3.1',  # 1.4 dropped support for < 1.11
 
           'pyyaml==3.10',
-          'rapid-router >= 1.0.0.post.dev1',
+          'rapid-router==1.4.0',
           'six==1.11.0',
           'aimmo',
           'docutils==0.12',
@@ -40,6 +40,10 @@ setup(name='codeforlife-portal',
           'sqlparse',
           'libsass',
           'django-forms-bootstrap'
+      ],
+      dependency_links=[
+          'git+https://github.com/ocadotechnology/rapid-router.git@django110#egg=rapid-router-1.4.0'
+
       ],
       tests_require=[
           'django-setuptest==0.2.1',
